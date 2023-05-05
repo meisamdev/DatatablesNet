@@ -3,7 +3,51 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33626.354
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meisam.DatatablesNet.Bundle", "Meisam.DatatablesNet.Bundle\Meisam.DatatablesNet.Bundle.csproj", "{E97817FE-1005-4D3A-8D68-D35CB7481EC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meisam.DatatablesNet.Core", "Meisam.DatatablesNet.Core\Meisam.DatatablesNet.Core.csproj", "{BC58E1E6-3340-4965-91D4-86CFF57FB7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meisam.DatatablesNet.BlazorHybrid", "Meisam.DatatablesNet.BlazorHybrid\Meisam.DatatablesNet.BlazorHybrid.csproj", "{CC955547-1177-492A-B432-E28C91FA5085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meisam.DatatablesNet.BlazorServer", "Meisam.DatatablesNet.BlazorServer\Meisam.DatatablesNet.BlazorServer.csproj", "{4AE799C1-6EB6-4278-B0C2-DD1BB6C07428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meisam.DatatablesNet.BlazorWasm", "Meisam.DatatablesNet.BlazorWasm\Meisam.DatatablesNet.BlazorWasm.csproj", "{4D53022B-E46A-430D-B344-8AC54E2E7AFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meisam.DatatablesNet.ProjectShared", "Meisam.DatatablesNet.ProjectShared\Meisam.DatatablesNet.ProjectShared.csproj", "{9CD5275C-BCE9-43FA-81E2-AB4347D63E6C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E97817FE-1005-4D3A-8D68-D35CB7481EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97817FE-1005-4D3A-8D68-D35CB7481EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97817FE-1005-4D3A-8D68-D35CB7481EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97817FE-1005-4D3A-8D68-D35CB7481EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC58E1E6-3340-4965-91D4-86CFF57FB7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC58E1E6-3340-4965-91D4-86CFF57FB7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC58E1E6-3340-4965-91D4-86CFF57FB7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC58E1E6-3340-4965-91D4-86CFF57FB7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC955547-1177-492A-B432-E28C91FA5085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC955547-1177-492A-B432-E28C91FA5085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC955547-1177-492A-B432-E28C91FA5085}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CC955547-1177-492A-B432-E28C91FA5085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC955547-1177-492A-B432-E28C91FA5085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC955547-1177-492A-B432-E28C91FA5085}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4AE799C1-6EB6-4278-B0C2-DD1BB6C07428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE799C1-6EB6-4278-B0C2-DD1BB6C07428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE799C1-6EB6-4278-B0C2-DD1BB6C07428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE799C1-6EB6-4278-B0C2-DD1BB6C07428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D53022B-E46A-430D-B344-8AC54E2E7AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D53022B-E46A-430D-B344-8AC54E2E7AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D53022B-E46A-430D-B344-8AC54E2E7AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D53022B-E46A-430D-B344-8AC54E2E7AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD5275C-BCE9-43FA-81E2-AB4347D63E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD5275C-BCE9-43FA-81E2-AB4347D63E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD5275C-BCE9-43FA-81E2-AB4347D63E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD5275C-BCE9-43FA-81E2-AB4347D63E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

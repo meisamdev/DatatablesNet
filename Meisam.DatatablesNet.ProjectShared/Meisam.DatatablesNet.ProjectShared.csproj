@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0-preview.3.23177.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Meisam.DatatablesNet.Bundle\Meisam.DatatablesNet.Bundle.csproj" />
+		<ProjectReference Include="..\Meisam.DatatablesNet.Core\Meisam.DatatablesNet.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Shared\" />
+	</ItemGroup>
+
+	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+		<Exec Command="powershell.exe Remove-Item &quot;../Meisam.DatatablesNet.BlazorServer/Shared/*&quot; -Force" />
+		<Exec Command="powershell.exe Remove-Item &quot;../Meisam.DatatablesNet.BlazorServer/Pages/*&quot; -Force" />
+		<Exec Command="powershell.exe copy-item &quot;./Shared/*&quot; &quot;../Meisam.DatatablesNet.BlazorServer/Shared&quot; -Force -Recurse" />
+		<Exec Command="powershell.exe copy-item &quot;./Pages/*&quot; &quot;../Meisam.DatatablesNet.BlazorServer/Pages&quot; -Force -Recurse" />
+
+		<Exec Command="powershell.exe Remove-Item &quot;../Meisam.DatatablesNet.BlazorHybrid/Shared/*&quot; -Force" />
+		<Exec Command="powershell.exe Remove-Item &quot;../Meisam.DatatablesNet.BlazorHybrid/Pages/*&quot; -Force" />
+		<Exec Command="powershell.exe copy-item &quot;./Shared/*&quot; &quot;../Meisam.DatatablesNet.BlazorHybrid/Shared&quot; -Force -Recurse" />
+		<Exec Command="powershell.exe copy-item &quot;./Pages/*&quot; &quot;../Meisam.DatatablesNet.BlazorHybrid/Pages&quot; -Force -Recurse" />
+
+		<Exec Command="powershell.exe Remove-Item &quot;../Meisam.DatatablesNet.BlazorWasm/Shared/*&quot; -Force" />
+		<Exec Command="powershell.exe Remove-Item &quot;../Meisam.DatatablesNet.BlazorWasm/Pages/*&quot; -Force" />
+		<Exec Command="powershell.exe copy-item &quot;./Shared/*&quot; &quot;../Meisam.DatatablesNet.BlazorWasm/Shared&quot; -Force -Recurse" />
+		<Exec Command="powershell.exe copy-item &quot;./Pages/*&quot; &quot;../Meisam.DatatablesNet.BlazorWasm/Pages&quot; -Force -Recurse" />
+	</Target>
+
+</Project>

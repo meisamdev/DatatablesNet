@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+/Meisam.DatatablesNet.BlazorHybrid/Pages
+/Meisam.DatatablesNet.BlazorHybrid/Shared
+/Meisam.DatatablesNet.BlazorServer/Pages
+/Meisam.DatatablesNet.BlazorServer/Shared
+/Meisam.DatatablesNet.BlazorWasm/Pages
+/Meisam.DatatablesNet.BlazorWasw/Shared
